@@ -19,8 +19,8 @@
         </dependency>
         <dependency>
             <groupId>com.github.aselab</groupId>
-            <artifactId>squeryl_2.9.1</artifactId>
-            <version>0.9.5-SNAPSHOT</version>
+            <artifactId>squeryl</artifactId>
+            <version>0.9.5</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
