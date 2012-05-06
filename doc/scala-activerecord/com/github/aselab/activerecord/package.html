@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.github.aselab.activerecord</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../../package.html">com</a>.<a name="com.github" class="extype" href="../../package.html">github</a>.<a name="com.github.aselab" class="extype" href="../package.html">aselab</a></p>
+        <h1>activerecord</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <span class="name">activerecord</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.github.aselab.activerecord.AbstractDefaultConfig" data-isabs="true">
+      <a id="AbstractDefaultConfig:AbstractDefaultConfig"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="AbstractDefaultConfig.html"><span class="name">AbstractDefaultConfig</span></a>
+        
+        <span class="result"> extends ActiveRecordConfig</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecord" data-isabs="true">
+      <a id="ActiveRecord:ActiveRecord"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="ActiveRecord.html"><span class="name">ActiveRecord</span></a>
+        
+        <span class="result"> extends ActiveRecordBase[Long] with ActiveRecordRelationSupport</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Base class of ActiveRecord objects.</p>
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordBase" data-isabs="true">
+      <a id="ActiveRecordBase:ActiveRecordBase[T]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordBase.html"><span class="name">ActiveRecordBase</span></a>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="result"> extends KeyedEntity[T] with Product with CRUDable with ActiveRecordBaseRelationSupport</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordBaseCompanion" data-isabs="true">
+      <a id="ActiveRecordBaseCompanion:ActiveRecordBaseCompanion[K, T]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordBaseCompanion.html"><span class="name">ActiveRecordBaseCompanion</span></a>
+        <span class="tparams">[<span name="K">K</span>, <span name="T">T &lt;: ActiveRecordBase[K]</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordBaseRelationSupport" data-isabs="true">
+      <a id="ActiveRecordBaseRelationSupport:ActiveRecordBaseRelationSupport"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordBaseRelationSupport.html"><span class="name">ActiveRecordBaseRelationSupport</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordCompanion" data-isabs="true">
+      <a id="ActiveRecordCompanion:ActiveRecordCompanion[T]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordCompanion.html"><span class="name">ActiveRecordCompanion</span></a>
+        <span class="tparams">[<span name="T">T &lt;: ActiveRecord</span>]</span>
+        <span class="result"> extends ActiveRecordBaseCompanion[Long, T]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Base class of ActiveRecord companion objects.</p>
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordConfig" data-isabs="true">
+      <a id="ActiveRecordConfig:ActiveRecordConfig"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordConfig.html"><span class="name">ActiveRecordConfig</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordException" data-isabs="false">
+      <a id="ActiveRecordException:ActiveRecordException"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordException.html"><span class="name">ActiveRecordException</span></a>
+        
+        <span class="result"> extends RuntimeException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordManyToMany" data-isabs="false">
+      <a id="ActiveRecordManyToMany:ActiveRecordManyToMany[O, A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordManyToMany.html"><span class="name">ActiveRecordManyToMany</span></a>
+        <span class="tparams">[<span name="O">O &lt;: ActiveRecord</span>, <span name="A">A &lt;: org.squeryl.KeyedEntity[_]</span>]</span>
+        <span class="params">(<span name="relation">relation: ManyToMany[O, A]</span>)</span><span class="result"> extends StatefulManyToMany[O, A] with RecordRelation with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordManyToOne" data-isabs="false">
+      <a id="ActiveRecordManyToOne:ActiveRecordManyToOne[O]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordManyToOne.html"><span class="name">ActiveRecordManyToOne</span></a>
+        <span class="tparams">[<span name="O">O &lt;: ActiveRecord</span>]</span>
+        <span class="params">(<span name="relation">relation: ManyToOne[O]</span>)</span><span class="result"> extends StatefulManyToOne[O] with RecordRelation with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordOneToMany" data-isabs="false">
+      <a id="ActiveRecordOneToMany:ActiveRecordOneToMany[M]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordOneToMany.html"><span class="name">ActiveRecordOneToMany</span></a>
+        <span class="tparams">[<span name="M">M &lt;: com.github.aselab.activerecord.ActiveRecordBase[_]</span>]</span>
+        <span class="params">(<span name="relation">relation: OneToMany[M]</span>)</span><span class="result"> extends StatefulOneToMany[M] with RecordRelation with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordRelationSupport" data-isabs="true">
+      <a id="ActiveRecordRelationSupport:ActiveRecordRelationSupport"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordRelationSupport.html"><span class="name">ActiveRecordRelationSupport</span></a>
+        
+        <span class="result"> extends ActiveRecordBaseRelationSupport</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordTables" data-isabs="true">
+      <a id="ActiveRecordTables:ActiveRecordTables"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordTables.html"><span class="name">ActiveRecordTables</span></a>
+        
+        <span class="result"> extends Schema with TableRelationSupport</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Base class of database schema.</p>
+    </li><li visbl="pub" name="com.github.aselab.activerecord.Annotations" data-isabs="true">
+      <a id="Annotations:Annotations"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Annotations.html"><span class="name">Annotations</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.CRUDable" data-isabs="true">
+      <a id="CRUDable:CRUDable"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="CRUDable.html"><span class="name">CRUDable</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Interface of CRUD and callbacks.</p>
+    </li><li visbl="pub" name="com.github.aselab.activerecord.DefaultConfig" data-isabs="false">
+      <a id="DefaultConfig:DefaultConfig"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="DefaultConfig.html"><span class="name">DefaultConfig</span></a>
+        
+        <span class="params">(<span name="config">config: Config</span>, <span name="overrideSettings">overrideSettings: Map[String, Any]</span>)</span><span class="result"> extends AbstractDefaultConfig with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.DefaultIntermediateRecord" data-isabs="false">
+      <a id="DefaultIntermediateRecord:DefaultIntermediateRecord"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="DefaultIntermediateRecord.html"><span class="name">DefaultIntermediateRecord</span></a>
+        
+        <span class="params">()</span><span class="result"> extends IntermediateRecord with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.FieldInfo" data-isabs="false">
+      <a id="FieldInfo:FieldInfo"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="FieldInfo.html"><span class="name">FieldInfo</span></a>
+        
+        <span class="params">(<span name="name">name: String</span>, <span name="fieldType">fieldType: Class[_]</span>, <span name="isOption">isOption: Boolean</span>, <span name="isSeq">isSeq: Boolean</span>, <span name="annotations">annotations: Seq[Annotation]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.IntermediateRecord" data-isabs="true">
+      <a id="IntermediateRecord:IntermediateRecord"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="IntermediateRecord.html"><span class="name">IntermediateRecord</span></a>
+        
+        <span class="result"> extends ActiveRecordBase[CompositeKey2[Long, Long]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Base class of intermediate table for many to many relationship.</p>
+    </li><li visbl="pub" name="com.github.aselab.activerecord.IntermediateRecordCompanion" data-isabs="true">
+      <a id="IntermediateRecordCompanion:IntermediateRecordCompanion[T]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="IntermediateRecordCompanion.html"><span class="name">IntermediateRecordCompanion</span></a>
+        <span class="tparams">[<span name="T">T &lt;: IntermediateRecord</span>]</span>
+        <span class="result"> extends ActiveRecordBaseCompanion[CompositeKey2[Long, Long], T]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Base class of IntermediateRecord companion objects.</p>
+    </li><li visbl="pub" name="com.github.aselab.activerecord.IntermediateTable" data-isabs="false">
+      <a id="IntermediateTable:IntermediateTable[T]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="IntermediateTable.html"><span class="name">IntermediateTable</span></a>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="result"> extends Table[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.RecordRelation" data-isabs="true">
+      <a id="RecordRelation:RecordRelation"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="RecordRelation.html"><span class="name">RecordRelation</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ReflectionUtil" data-isabs="true">
+      <a id="ReflectionUtil:ReflectionUtil"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ReflectionUtil.html"><span class="name">ReflectionUtil</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.RelationWrapper" data-isabs="false">
+      <a id="RelationWrapper:RelationWrapper[L, R]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="RelationWrapper.html"><span class="name">RelationWrapper</span></a>
+        <span class="tparams">[<span name="L">L &lt;: ActiveRecord</span>, <span name="R">R &lt;: com.github.aselab.activerecord.ActiveRecordBase[_]</span>]</span>
+        <span class="params">(<span name="relation">relation: Relation[L, R]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.RichQuery" data-isabs="false">
+      <a id="RichQuery:RichQuery[T]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="RichQuery.html"><span class="name">RichQuery</span></a>
+        <span class="tparams">[<span name="T">T &lt;: com.github.aselab.activerecord.ActiveRecordBase[_]</span>]</span>
+        <span class="params">(<span name="query">query: Queryable[T]</span>, <span name="m">m: Manifest[T]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.TableRelationSupport" data-isabs="true">
+      <a id="TableRelationSupport:TableRelationSupport"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="TableRelationSupport.html"><span class="name">TableRelationSupport</span></a>
+        
+        <span class="result"> extends Schema</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.github.aselab.activerecord.ActiveRecordException" data-isabs="false">
+      <a id="ActiveRecordException:ActiveRecordException"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="ActiveRecordException$.html"><span class="name">ActiveRecordException</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.Config" data-isabs="false">
+      <a id="Config:Config"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Config$.html"><span class="name">Config</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.FieldInfo" data-isabs="false">
+      <a id="FieldInfo:FieldInfo"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="FieldInfo$.html"><span class="name">FieldInfo</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.ReflectionUtil" data-isabs="false">
+      <a id="ReflectionUtil:ReflectionUtil"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="ReflectionUtil$.html"><span class="name">ReflectionUtil</span></a>
+        
+        <span class="result"> extends ReflectionUtil</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.annotations" data-isabs="false">
+      <a id="annotations:annotations"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="annotations/package.html"><span class="name">annotations</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.package.dsl" data-isabs="false">
+      <a id="dsl:dsl"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="package$$dsl$.html"><span class="name">dsl</span></a>
+        
+        <span class="result"> extends PrimitiveTypeMode with Annotations</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.github.aselab.activerecord.experimental" data-isabs="false">
+      <a id="experimental:experimental"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="experimental/package.html"><span class="name">experimental</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
