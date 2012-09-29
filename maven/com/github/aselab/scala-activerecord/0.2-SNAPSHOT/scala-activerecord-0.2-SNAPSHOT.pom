@@ -83,12 +83,6 @@
             <version>1.4.0</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>reaktor</groupId>
-            <artifactId>scct_2.9.2</artifactId>
-            <version>0.2-SNAPSHOT</version>
-            <scope>scct</scope>
-        </dependency>
     </dependencies>
     <repositories>
         <repository>
