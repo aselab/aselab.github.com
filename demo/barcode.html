@@ -7,19 +7,13 @@
         var button = document.getElementById("button");
         var focusDiv = document.getElementById("focusDiv");
         var result = document.getElementById("result");
-        var div = document.createElement("div");
-        function html(code) {
-          if (code == 13) return "<br/>";
-          div.textContent = String.fromCharCode(event.keyCode);
-          return div.innerHTML;
-        }
 
         button.addEventListener("click", function() {
           focusDiv.focus();
         });
 
-        focusDiv.addEventListener("keydown", function(event) {
-          result.innerHTML += html(event.keyCode);
+        focusDiv.addEventListener("keypress", function(event) {
+          result.innerHTML += event.charCode == 13 ? "<br/>" : String.fromCharCode(event.charCode);
         });
 
       });
