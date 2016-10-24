@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var button = document.getElementById("button");
         var focusDiv = document.getElementById("focusDiv");
         var result = document.getElementById("result");
+        var div = document.createElement("div");
+        function html(code) {
+          if (code == 13) return "<br/>";
+          div.textContent = String.fromCharCode(event.keyCode);
+          return div.innerHTML;
+        }
 
         button.addEventListener("click", function() {
           focusDiv.focus();
         });
 
-        focusDiv.addEventListener("keyup", function(event) {
-          result.innerHTML += event.keyCode == 13 ? "<br/>" : event.key;
+        focusDiv.addEventListener("keydown", function(event) {
+          result.innerHTML += html(event.keyCode);
         });
 
       });
