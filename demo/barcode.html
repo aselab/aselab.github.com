@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -10,6 +11,7 @@
 
         button.addEventListener("click", function() {
           focusDiv.focus();
+          button.innerHTML = "スキャンしてください";
         });
 
         focusDiv.addEventListener("keypress", function(event) {
@@ -18,9 +20,33 @@
 
       });
     </script>
+    <style>
+      button {
+        position: relative;
+        display: inline-block;
+        padding: .8em 4em;
+        background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);
+        background: linear-gradient(#fe5f95 , #ff3f7f);
+        border: 1px solid #fe3276;
+        border-radius: 4px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      button::after {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+        left: 3px;
+        content: '';
+        border: 2px dashed #fff;
+        border-radius: 4px;
+      }
+    </style>
   </head>
   <body>
-    <button id="button" type="button">scan</button>
+    <button id="button" type="button">スキャン開始</button>
     <div id="focusDiv" tabindex="0"></div>
     <div id="result"></div>
   </body>
